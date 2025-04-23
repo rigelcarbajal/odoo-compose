@@ -53,6 +53,9 @@ This repository provides a complete Docker Compose setup for **Odoo**, using **P
 git clone https://github.com/rigelcarbajal/odoo-compose.git
 cd odoo-compose
 
+# Create SSL certificates
+sudo chmod +x nginx/certs/gen_cert_ecdsa.sh
+sudo sh nginx/certs/gen_cert_ecdsa.sh
 
 # Launch the stack
 docker compose up -d
